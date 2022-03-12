@@ -1,4 +1,4 @@
-var chalk = require('chalk')
+import chalk from 'chalk'
 
 function Dog(name){
     this.name = name
@@ -10,7 +10,7 @@ Dog.prototype.eat = function(cat){
 }
 
 Dog.prototype.sayHi = function(){
-    console.log('Hi I am a dog n my name is ' + chalk.green(this.name))
+    console.log('Hi I am a dog n my name is ' + chalk.cyan(this.name))
 }
 
-module.exports = Dog
+export default Dog

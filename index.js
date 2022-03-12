@@ -1,4 +1,7 @@
-var Dog = require('./Dog')
+import Dog from './Dog';
+import Cat from './Cat';
 
-var dogName = new Dog('Mic')
-dogName.sayHi()
+var Mic = new Dog('Mic')
+var Tom = new Cat()
+Mic.eat(Tom);
+console.log(Mic)
